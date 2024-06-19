@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "386186102746",
+    "project_id": "tridanwebshop",
+    "storage_bucket": "tridanwebshop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386186102746:android:1705c7d001423138f622e3",
+        "android_client_info": {
+          "package_name": "rs.tridanwebshop.tridan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-hD30aiCfdamt10yWuGqSVONHLiHo9cA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

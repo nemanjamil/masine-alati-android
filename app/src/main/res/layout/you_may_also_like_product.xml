@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?><!-- layout with two independent columns-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dropdown_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dropdown_border">
+
+        <TextView
+            android:id="@+id/txt_drop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_drop_arrow"
+            android:layout_toStartOf="@id/img_drop_arrow"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/img_drop_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:columnWidth="150dp"
+            android:drawSelectorOnTop="true"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp"
+            android:focusable="true"
+            android:clickable="true"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/flow_layout_scroll"
+            android:focusable="true">
+
+            <rs.tridanwebshop.tridan.customview.FlowLayout
+                android:id="@+id/flow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/background_white"
+                app:paddingHorizontal="5dp"
+                app:paddingVertical="5dp">
+            </rs.tridanwebshop.tridan.customview.FlowLayout>
+        </ScrollView>
+
+
+
+        <!--<ScrollView-->
+            <!--android:id="@+id/scrollView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<FrameLayout-->
+                    <!--android:id="@+id/productLeft"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".50">-->
+
+                <!--</FrameLayout>-->
+
+                <!--<FrameLayout-->
+                    <!--android:id="@+id/productRight"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight=".50">-->
+
+                <!--</FrameLayout>-->
+            <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+
+    </FrameLayout>
+</LinearLayout>

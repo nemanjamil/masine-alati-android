@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dotIndicator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <rs.tridanwebshop.tridan.customview.image_slider_with_dot_indicator.ImageSlider3Brands
+        android:id="@+id/view_pager_dot_ind_0"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:visibility="gone"
+        app:slideInterval="5000"/>
+
+    <rs.tridanwebshop.tridan.customview.image_slider_with_dot_indicator.ImageSlider2Products
+        android:id="@+id/view_pager_dot_ind_1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:slideInterval="5000" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button_holder_background"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp">
+
+        <include
+            android:id="@+id/four_buttons"
+            layout="@layout/four_buttons" />
+    </FrameLayout>
+</LinearLayout>

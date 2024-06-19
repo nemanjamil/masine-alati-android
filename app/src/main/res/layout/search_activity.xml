@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/main_activity_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <!--  <FrameLayout
+                  android:id="@+id/header"
+                  android:layout_width="match_parent"
+                  android:layout_height="?attr/actionBarSize"
+                  android:background="@android:color/transparent" /> -->
+            <TextView
+                android:id="@+id/search_message"
+                android:layout_width="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/medium_text_size"
+                android:padding="@dimen/standard_padding"
+                android:text="@string/search_instruction_txt"
+                android:visibility="gone"/>
+
+            <FrameLayout
+                android:id="@+id/articles_content_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/button_holder_background" />
+
+
+        </LinearLayout>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_gray"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:windowActionBarOverlay="true">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:minHeight="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+                    <!-- Spinner with sort options -->
+                    <RelativeLayout
+                        android:id="@+id/sort_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/search_text"
+                            android:textColor="@color/primary_text"
+                            android:imeOptions="actionSearch"
+                            android:inputType="text"
+                            android:textColorHighlight="@color/circle_stroke"
+                            android:textColorLink="@color/circle_stroke"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="35dp"
+                            android:paddingEnd="35dp"
+                            android:paddingStart="35dp"
+                            android:paddingLeft="35dp"/>
+
+                        <Button
+                            android:id="@+id/clearable_button_clear"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_toLeftOf="@id/search_text"
+                            android:layout_toStartOf="@id/search_text"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:alpha="0.3"
+                            android:background="@drawable/ic_clear_black_24dp" />
+                    </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- Filter button with quick return behaviour-->
+     <!--   <RelativeLayout
+            android:id="@+id/filter_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="bottom"
+            android:alpha="0.7"
+            android:background="@color/base_gray"
+            android:clickable="true"
+            app:layout_behavior=".QuickReturnFooterBehavior">
+            <ImageView
+                android:id="@+id/img_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.9"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_filter"
+                android:layout_toStartOf="@+id/btn_filter"
+                android:contentDescription="@string/image_description"
+                android:src="@drawable/ic_filter_list_black_24dp" />
+            <TextView
+                android:id="@+id/btn_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_filter"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:textAllCaps="true"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/selected_item"/>
+        </RelativeLayout>-->
+    </LinearLayout>
+</LinearLayout>

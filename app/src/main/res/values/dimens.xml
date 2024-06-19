@@ -1,0 +1,48 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="standard_padding">20dp</dimen>
+    <dimen name="no_elevation">0dp</dimen>
+    <dimen name="card_no_rounding">0dp</dimen>
+    <dimen name="card_rounding">4dp</dimen>
+    <dimen name="four_products_margine_left_right">5dp</dimen>
+    <dimen name="four_products_margine_top_bottom">3dp</dimen>
+    <dimen name="recycler_view_space">1px</dimen>
+    <dimen name="toolbar_items_padding">10dp</dimen>
+    <dimen name="toolbar_text_size">20sp</dimen>
+    <dimen name="padding">5dp</dimen>
+
+    <!-- Navigation drawer dimens. -->
+    <dimen name="list_item_text_size">12sp</dimen>
+    <dimen name="subheader_text_size">12sp</dimen>
+
+    <dimen name="category_text_size">18sp</dimen>
+    <dimen name="large_text_size">16sp</dimen>
+    <dimen name="medium_text_size">14sp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="extra_small_text_size">10sp</dimen>
+
+    <dimen name="load_more_footer_height_classic">10dp</dimen>
+
+    <!-- SignIn activity -->
+    <dimen name="g_top_margin">100dp</dimen>
+    <dimen name="one_product_padding">5dp</dimen>
+    <dimen name="one_product_text_padding_top_bottom">1dp</dimen>
+    <dimen name="one_product_text_padding_left_right">3dp</dimen>
+    <dimen name="line_margine">6dp</dimen>
+    <dimen name="activity_sign_in_vertical_margin_btn">8dp</dimen>
+
+    <dimen name="sign_in_activity_horizontal_margin">16dp</dimen>
+    <dimen name="sign_in_activity_vertical_margin">16dp</dimen>
+    <dimen name="user_data_edit_text_size">24sp</dimen>
+
+    <!-- Offer indicator -->
+    <dimen name="offer_indicator_radius">30dp</dimen>
+
+</resources>

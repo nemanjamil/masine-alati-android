@@ -1,0 +1,251 @@
+<resources>
+<!--    <string name="app_name">MasineAlati</string>-->
+    <string name="app_name">Tridanwebshop</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Navigation drawer menu -->
+    <string name="account">Moj nalog</string>
+    <string name="home">Home</string>
+    <string name="cart">Korpa</string>
+
+    <string name="recommendation">Izdvajamo</string>
+
+    <string name="best_selling">Najprodavanije</string>
+    <string name="new_products">Novi proizvodi</string>
+    <string name="sale">Na popustu</string>
+
+    <string name="info">Informacije</string>
+
+    <string name="help_center">Postavite pitanje</string>
+    <string name="how_to_buy">Kako kupiti?</string>
+    <string name="contact">Kontakt</string>
+
+    <!-- QuestionActivity-->
+    <string name="search_title">Pretraga</string>
+    <string name="question_txt">Pitanje</string>
+    <string name="send_msg_txt">Pošalji poruku</string>
+    <string name="delete_msg_txt">Obriši poruku</string>
+
+    <!--Short product info-->
+    <string name="view_more">još</string>
+    <string name="price">xx.xx rsd</string>
+    <string name="article_specification">%1$s => %2$s</string>
+    <string name="image_description">slika proizvoda</string>
+    <string name="group_name">Naziv categories</string>
+
+    <!-- Round buttons labels (first tab) -->
+    <string name="first_button_text">Kontakt</string>
+    <string name="second_button_text">Kako kupiti?</string>
+    <string name="third_button_text">Na akciji</string>
+    <string name="fourth_button_text">Sve kategorije</string>
+
+    <!-- Progress dialog message -->
+    <string name="progress_dialog_message">Učitavanje podataka …</string>
+
+    <!-- Tabs labels -->
+    <string name="first_tab">TOP proizvodi</string>
+    <string name="second_tab">Ponuda</string>
+
+    <!-- Tab specs -->
+    <string name="first_tab_spec">tab1</string>
+    <string name="second_tab_spec">tab2</string>
+
+    <!-- Subcategory history -->
+    <string name="history">Istorija</string>
+    <string name="delete_history_question">Da li ste sigurni da želite da obrišete istoriju pregleda?</string>
+    <string name="delete_txt">Obriši istoriju</string>
+    <string name="cancel_txt">Odustani</string>
+
+    <!-- Sort options -->
+    <string name="no_sort">Nesortirano</string>
+
+    <string name="Title">Mašine i alati</string>
+
+    <string name="loading">Loading…</string>
+
+    <!-- First tab footer strings-->
+    <string name="recyclerview_footer_text">Prevuci za prelazak na  karticu \"PONUDA\"</string>
+    <string name="recyclerview_footer_image_description">arrow_up</string>
+
+    <!-- GCM strings -->
+    <string name="gcm_send_message">Token retrieved and sent to server! You can now use gcmsender to
+        send downstream messages to this app.</string>
+    <string name="registering_message">Generating InstanceID token…</string>
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token,
+        sending the fetched token to the server or subscribing to the PubSub topic. Please try
+        running the sample again.</string>
+
+    <!-- SignIn activity strings -->
+    <string name="title_text">Google Sign-In\nQuickstart</string>
+    <string name="name_sign_in_activity">SignInActivity</string>
+    <!-- Button labels -->
+    <string name="sign_out">Odjavi se</string>
+    <string name="disconnect">Disconnect</string>
+    <!-- Sign-in status messages -->
+    <string name="signed_in_fmt">Signed in as: %s</string>
+    <string name="signed_in">Signed in</string>
+    <string name="signing_in">Signing in…</string>
+    <string name="signed_out">Signed out</string>
+    <string name="signed_in_err">"Error: please check logs."</string>
+    <string name="error_null_person">
+        Error: Plus.PeopleApi.getCurrentPerson returned null. Ensure that the Google+ API is
+        enabled for your project, you have a properly configured google-services.json file
+        and that your device has an internet connection.
+    </string>
+    <string name="auth_code_fmt">Auth Code: %s</string>
+    <string name="id_token_fmt">ID Token: %s</string>
+    <!-- Google Play Services error for Toast -->
+    <string name="play_services_error_fmt">Google Play Services Error: %i</string>
+    <!-- Content Description for images -->
+    <string name="desc_google_icon">Google Logo</string>
+    <string name="login">Prijavi se</string>
+
+    <string name="user_name_unavailable">Prijavi se | Registruj se besplatno</string>
+
+    <!-- Login and Register strings-->
+    <string name="full_name_hint">Ime</string>
+    <string name="last_name_hint">Prezime</string>
+    <string name="email_hint">Email</string>
+    <string name="pass_hint">Šifra</string>
+    <string name="pass_toggle_label_show">Pokaži</string>
+    <string name="pass_toggle_label_hide">Sakrij</string>
+    <string name="btn_text_register">Napravi nalog</string>
+    <string name="text_already_have_account">Ako već imate nalog:
+        <u>kliknite ovde.</u>
+    </string>
+    <string name="text_logged_in">Povezani ste</string>
+    <string name="title_log_in">Prijavi se</string>
+    <string name="text_logged_out">Niste povezani</string>
+    <string name="btn_text_logout">Odveži se</string>
+<!--    <string name="text_web_site">masinealati.rs</string>-->
+    <string name="text_web_site">masine.tridan.rs/</string>
+    <string name="btn_text_sign_in">Već imam nalog</string>
+    <string name="btn_text_register_here">Registruj me</string>
+    <string name="OK">OK</string>
+
+    <!--OneArticleActivity-->
+    <string name="cena_txt">Cena: %s</string>
+    <string name="price_by">Cena po: %s</string>
+    <string name="brend_txt">Brend: %s</string>
+    <string name="quantity_txt">Količina: %d</string>
+    <string name="no_product_txt">Nema na stanju. Pozovite nas.</string>
+    <string name="call_for_product_txt">Artikal se može naručiti samo putem telefona.</string>
+    <string name="min_quantity_txt">Minimalna količina za narudžbinu: %1$s %2$s</string>
+    <string name="description_txt">Opis artikla:</string>
+    <string name="id_txt">Id:</string>
+    <string name="code_txt">Code:</string>
+    <string name="ask_question">Postavi pitanje</string>
+    <string name="article_category_text">Pripada kategoriji: </string>
+    <string name="no_spec">Nema specifikacija</string>
+    <string name="text">%s</string>
+    <string name="underlined_text"><u>%s</u></string>
+
+
+    <string name="stock_state_available">ima na stanju</string>
+    <string name="stock_state_sold">rasprodato</string>
+    <string name="msg_no_articles">Nema artikala za kategoriju \"<i>%s</i>\" </string>
+    <string name="msg_no_search_results">Nema artikala koji odgovaraju zadatim kriterijumima. Klikom na \"FILTER\" možete promeniti specifikacije.</string>
+
+
+    <string name="btn_filter">Filter</string>
+    <string name="sort_question">Izaberite način sortiranja</string>
+    <string name="txt_brands">Brendovi</string>
+    <string name="txt_cena_filter">Cena</string>
+    <string name="txt_search_results">Ukupan broj rezultata pretrage: %1$d</string>
+    <string name="articles_category_link"><u>%s</u></string>
+
+    <string-array name="sort_options">
+        <item>Po gledanosti</item>
+        <item>Cena (rastuće)</item>
+        <item>Cena (opadajuće)</item>
+        <item>Po nazivu</item>
+        <item>Po poslednje dodatom proizvodu</item>
+    </string-array>
+
+    <string-array name="price_options">
+        <item>bilo koja cena</item>
+        <item>manje od 500</item>
+        <item>od 500 do 1000</item>
+        <item>od 1000 do 2000</item>
+        <item>od 2000 do 5000</item>
+        <item>od 5000 do 10000</item>
+        <item>od 10000 do 20000</item>
+        <item>od 20000 do 50000</item>
+        <item>više od 50000</item>
+    </string-array>
+
+    <!-- SubCategorySpecificationLayout-->
+    <string name="reset">Poništi</string>
+    <string name="apply">Primeni</string>
+    <string name="filter_txt">Filter</string>
+    <string name="title_activity_one_article">OneArticleActivity</string>
+
+    <!--SearchActivity-->
+    <string name="search_instruction_txt">Unesite ključnu reč za pretragu</string>
+    <string name="no_search_results">Nema rezultata za  reč \"%s\"</string>
+
+    <!-- Special offer indicators-->
+    <string name="sale_indicator">SALE</string>
+    <string name="new_indicator">NEW</string>
+    <string name="best_indicator">HOT</string>
+
+
+    <!-- cart strings-->
+    <string name="empty_cart_text">Trenutno nema proizvoda u korpi.</string>
+    <string name="empty_cart_btn_text">Pogledaj proizvode</string>
+    <string name="add_to_chart">Dodaj u korpu </string>
+    <string name="delete_confirmation_title">Brisanje iz korpe</string>
+    <string name="delete_confirmation_question">Da li želite da izbacite artikal iz korpe?</string>
+    <string name="yes">Da</string>
+    <string name="cancel">Odustani</string>
+    <string name="add_confirmation_title">Artikal ubačen u korpu</string>
+    <string name="add_confirmation_question">U korpi imate X artikala.</string>
+    <string name="go_to_cart">Korpa</string>
+    <string name="continue_shopping">Nastavi</string>
+    <string name="clear_cart">Isprazni korpu</string>
+    <string name="buy">Kupi</string>
+    <string name="total"><b>UKUPNO:</b></string>
+    <string name="delete_all_confirmation_question">Da li želite da ispraznite korpu?</string>
+    <string name="address_hint">Adresa za slanje</string>
+    <string name="city_hint">Grad</string>
+    <string name="zip_hint">Poštanski broj</string>
+    <string name="mobile_hint">Mobilni telefon</string>
+    <string name="phone_hint">Fiksni telefon</string>
+    <string name="comment_hint">Napomena</string>
+    <string name="next">Nastavi</string>
+    <string name="progress_update_user_data">Slanje podataka o korisniku</string>
+    <string name="progress_completing_transaction">Pravljenje narudžbine</string>
+    <string name="info_title">Informacija</string>
+
+
+    <!-- Number picker strings-->
+    <!-- Font -->
+    <string name="roboto_regular">sans-serif</string>
+    <string name="roboto_light">sans-serif-light</string>
+    <string name="roboto_condensed">sans-serif-condensed</string>
+    <string name="roboto_thin">sans-serif-thin</string>
+    <string name="roboto_medium">sans-serif-medium</string>
+
+    <string name="number_picker_formatter">%02d</string>
+    <string name="shipping">Troškovi prevoza:</string>
+    <string name="price_label">Cena:</string>
+    <string name="order_success_title">Kupovina</string>
+    <string name="order_success_message">Uspešno je obavljena kupovina.\nPotvrda o narudžbini je poslata na Vašu e-mail adresu.</string>
+    <string name="disable_push_notifications">Isključi notifikacije</string>
+    <string name="enable_push_notifications">Uključi notifikacije</string>
+    <string name="sign_in_title">Dobrodošli na MašineAlati</string>
+    <string name="disclaimer_text">Vaši podaci neće biti ustupani trećim licima.</string>
+
+    <string name="acc_enter_name">Vaše ime?</string>
+    <string name="acc_name_label">Ime</string>
+    <string name="acc_last_name_label">Prezime</string>
+    <string name="acc_enter_email">Vaša email adresa?</string>
+    <string name="acc_enter_pass">Izaberite šifru</string>
+    <string name="acc_enter_pass_desc">Šifra mora imati bar 8 karaktera.</string>
+    <string name="acc_change_user_data">Koristnički podaci</string>
+
+</resources>

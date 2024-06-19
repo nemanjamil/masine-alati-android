@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_nav_login"
+            android:title="@string/account" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_nav_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_chart"
+            android:icon="@drawable/ic_nav_cart"
+            android:title="@string/cart" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_nav_notifications_on"
+            android:title="" />
+    </group>
+
+    <item android:title="@string/recommendation">
+        <menu>
+            <item
+                android:id="@+id/nav_best"
+                android:icon="@drawable/ic_nav_best"
+                android:title="@string/best_selling" />
+            <item
+                android:id="@+id/nav_new"
+                android:icon="@drawable/ic_nav_new"
+                android:title="@string/new_products" />
+            <item
+                android:id="@+id/nav_sale"
+                android:icon="@drawable/ic_nav_sale"
+                android:title="@string/sale" />
+        </menu>
+    </item>
+    <item android:title="@string/info">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_nav_question"
+                android:title="@string/help_center" />
+            <item
+                android:id="@+id/nav_how_to_buy"
+                android:icon="@drawable/ic_nav_info"
+                android:title="@string/how_to_buy" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_nav_contact"
+                android:title="@string/contact" />
+        </menu>
+    </item>
+</menu>

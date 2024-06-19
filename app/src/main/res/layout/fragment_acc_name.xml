@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rs.tridanwebshop.tridan.fragments.AccNameFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/sign_in_activity_vertical_margin"
+            android:layout_marginLeft="@dimen/sign_in_activity_horizontal_margin"
+            android:layout_marginStart="@dimen/sign_in_activity_horizontal_margin"
+            android:layout_marginTop="50dp"
+            android:text="@string/acc_enter_name"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/tv_title"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="@dimen/sign_in_activity_horizontal_margin"
+            android:layout_marginStart="@dimen/sign_in_activity_horizontal_margin"
+            android:layout_marginTop="@dimen/sign_in_activity_vertical_margin"
+            android:text="@string/acc_name_label"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextWhite" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_label"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_last_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/et_name"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="@dimen/sign_in_activity_horizontal_margin"
+            android:layout_marginStart="@dimen/sign_in_activity_horizontal_margin"
+            android:layout_marginTop="@dimen/sign_in_activity_vertical_margin"
+            android:text="@string/acc_last_name_label"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextWhite" />
+
+        <EditText
+            android:id="@+id/et_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_last_name_label"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+</FrameLayout>

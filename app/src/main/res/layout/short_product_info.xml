@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/subcategoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="2"
+        android:text="@string/price"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="start"
+        android:text="@string/cena_txt"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="@dimen/small_text_size" />
+
+    <TextView
+        android:id="@+id/brandName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="start"
+        android:text="@string/brend_txt"
+        android:textSize="@dimen/small_text_size" />
+
+    <TextView
+        android:id="@+id/stockState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="start"
+        android:text=""
+        android:textSize="@dimen/small_text_size" />
+
+    <TextView
+        android:id="@+id/item_spec_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:lines="1"
+        android:text=""
+        android:textSize="@dimen/small_text_size"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/item_spec_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:lines="1"
+        android:text=""
+        android:textSize="@dimen/small_text_size"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/item_spec_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:lines="1"
+        android:text=""
+        android:textSize="@dimen/small_text_size"
+        android:visibility="gone" />
+</LinearLayout>
