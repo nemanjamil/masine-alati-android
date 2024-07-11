@@ -6,7 +6,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+tools:background="@color/accent"
+        >
 
         <TextView
             android:id="@+id/tv_login"
@@ -36,7 +38,8 @@
             android:layout_marginTop="@dimen/sign_in_activity_vertical_margin"
             android:text="@string/email_hint"
             android:textAllCaps="true"
-            android:textColor="@color/colorTextWhite" />
+            android:textColor="@color/colorTextWhite"
+            />
 
         <EditText
             android:id="@+id/et_email"
@@ -45,7 +48,12 @@
             android:layout_below="@id/tv_email_label"
             android:inputType="textEmailAddress"
             android:textColor="@color/colorTextWhite"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+
+            android:layout_marginStart="@dimen/edt_margin"
+            android:layout_marginEnd="@dimen/edt_margin"
+
+            />
 
         <TextView
             android:id="@+id/tv_pass_label"
@@ -85,7 +93,10 @@
             android:layout_below="@id/tv_pass_label"
             android:inputType="textPassword"
             android:textColor="@color/colorTextWhite"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+
+            android:layout_marginStart="@dimen/edt_margin"
+            android:layout_marginEnd="@dimen/edt_margin"/>
 
     </RelativeLayout>
 

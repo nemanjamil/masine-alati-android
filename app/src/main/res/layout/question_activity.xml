@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/background_light"
     android:orientation="vertical">
 
@@ -26,8 +27,8 @@
         android:drawableEnd="@mipmap/ic_chainsaw"
         android:drawableRight="@mipmap/ic_chainsaw"
         android:gravity="center"
-        android:paddingBottom="20dp"
         android:paddingTop="20dp"
+        android:paddingBottom="20dp"
         android:text="@string/text_web_site"
         android:textColor="@color/primary"
         android:textSize="30sp"
@@ -40,68 +41,113 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/sender_email_layout"
+        <EditText
+            android:id="@+id/sender_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/primary_dark"
+            android:textSize="20sp"
+
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp">
-
-            <EditText
-                android:id="@+id/sender_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rectangular_txt"
-                android:gravity="center_vertical"
-                android:hint="@string/email_hint"
-                android:inputType="textEmailAddress"
-                android:padding="5dp"
-                android:singleLine="true" />
+            app:backgroundTint="@color/primary_dark"
 
 
-        </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginStart="@dimen/edt_margin"
+            android:layout_marginEnd="@dimen/edt_margin"
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/questionlayout"
+            android:textCursorDrawable="@drawable/color_cursor_primary_dark"
+            />
+
+        <EditText
+            android:id="@+id/question_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
+
+            android:gravity="top"
+            android:hint="@string/question_txt"
+
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/primary_dark"
+            android:textSize="21sp"
+
+
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp">
+            app:backgroundTint="@color/primary_dark"
 
-            <EditText
-                android:id="@+id/question_txt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rectangular_txt"
-                android:gravity="top"
-                android:hint="@string/question_txt"
-                android:inputType="textMultiLine"
-                android:lines="5"
-                android:padding="5dp"
-                android:scrollbars="vertical" />
+            android:layout_marginStart="@dimen/edt_margin"
+            android:layout_marginEnd="@dimen/edt_margin"
+
+            android:textCursorDrawable="@drawable/color_cursor_primary_dark"
+            />
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/sender_email_layout"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="55dp"-->
+        <!--            android:layout_marginBottom="10dp"-->
+        <!--            android:layout_marginTop="10dp">-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/sender_email"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:background="@drawable/rectangular_txt"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:hint="@string/email_hint"-->
+        <!--                android:inputType="textEmailAddress"-->
+        <!--                android:padding="5dp"-->
+        <!--                android:singleLine="true" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
 
 
-        </com.google.android.material.textfield.TextInputLayout>
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/questionlayout"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="10dp"-->
+        <!--            android:layout_marginTop="10dp">-->
+        <!--            <EditText-->
+        <!--                android:id="@+id/question_txt"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="@drawable/rectangular_txt"-->
+        <!--                android:gravity="top"-->
+        <!--                android:hint="@string/question_txt"-->
+        <!--                android:inputType="textMultiLine"-->
+        <!--                android:lines="5"-->
+        <!--                android:padding="5dp"-->
+        <!--                android:scrollbars="vertical" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         android:weightSum="2">
 
         <Button
             android:id="@+id/delete_msg"
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
             android:background="@color/primary_dark"
             android:text="@string/delete_msg_txt"
             android:textColor="#ffffff"
@@ -110,11 +156,13 @@
         <Button
             android:id="@+id/send_msg"
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
             android:background="@color/primary_dark"
             android:text="@string/send_msg_txt"
             android:textColor="#ffffff"

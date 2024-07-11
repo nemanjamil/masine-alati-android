@@ -6,7 +6,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+
+        tools:background="@color/accent">
 
         <TextView
             android:id="@+id/tv_title"
@@ -51,7 +53,10 @@
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:textColor="@color/colorTextWhite"
-                    android:textSize="@dimen/user_data_edit_text_size" />
+                    android:textSize="@dimen/user_data_edit_text_size"
+                    android:layout_marginStart="@dimen/edt_margin"
+                    android:layout_marginEnd="@dimen/edt_margin"
+                    />
 
                 <TextView
                     android:id="@+id/tv_last_name_label"
@@ -71,7 +76,10 @@
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
                     android:textColor="@color/colorTextWhite"
-                    android:textSize="@dimen/user_data_edit_text_size" />
+                    android:textSize="@dimen/user_data_edit_text_size"
+                    android:layout_marginStart="@dimen/edt_margin"
+                    android:layout_marginEnd="@dimen/edt_margin"
+                    />
 
                 <TextView
                     android:id="@+id/tv_address_label"
@@ -91,7 +99,10 @@
                     android:layout_height="wrap_content"
                     android:inputType="textPostalAddress"
                     android:textColor="@color/colorTextWhite"
-                    android:textSize="@dimen/user_data_edit_text_size" />
+                    android:textSize="@dimen/user_data_edit_text_size"
+                    android:layout_marginStart="@dimen/edt_margin"
+                    android:layout_marginEnd="@dimen/edt_margin"
+                    />
 
                 <TextView
                     android:id="@+id/tv_city_label"
@@ -111,7 +122,10 @@
                     android:layout_height="wrap_content"
                     android:inputType="text"
                     android:textColor="@color/colorTextWhite"
-                    android:textSize="@dimen/user_data_edit_text_size" />
+                    android:textSize="@dimen/user_data_edit_text_size"
+                    android:layout_marginStart="@dimen/edt_margin"
+                    android:layout_marginEnd="@dimen/edt_margin"
+                    />
 
                 <TextView
                     android:id="@+id/tv_zip_label"
@@ -131,7 +145,10 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:textColor="@color/colorTextWhite"
-                    android:textSize="@dimen/user_data_edit_text_size" />
+                    android:textSize="@dimen/user_data_edit_text_size"
+                    android:layout_marginStart="@dimen/edt_margin"
+                    android:layout_marginEnd="@dimen/edt_margin"
+                    />
 
                 <TextView
                     android:id="@+id/tv_email_label"
@@ -143,7 +160,8 @@
                     android:layout_marginTop="@dimen/sign_in_activity_vertical_margin"
                     android:text="@string/email_hint"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorTextWhite" />
+                    android:textColor="@color/colorTextWhite"
+                    />
 
                 <EditText
                     android:id="@+id/et_email"
@@ -151,7 +169,10 @@
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
                     android:textColor="@color/colorTextWhite"
-                    android:textSize="@dimen/user_data_edit_text_size" />
+                    android:textSize="@dimen/user_data_edit_text_size"
+                    android:layout_marginStart="@dimen/edt_margin"
+                    android:layout_marginEnd="@dimen/edt_margin"
+                    />
 
                 <TextView
                     android:id="@+id/tv_mobile_label"
@@ -171,7 +192,10 @@
                     android:layout_height="wrap_content"
                     android:inputType="phone"
                     android:textColor="@color/colorTextWhite"
-                    android:textSize="@dimen/user_data_edit_text_size" />
+                    android:textSize="@dimen/user_data_edit_text_size"
+                    android:layout_marginStart="@dimen/edt_margin"
+                    android:layout_marginEnd="@dimen/edt_margin"
+                    />
 
                 <TextView
                     android:id="@+id/tv_phone_label"
@@ -191,7 +215,10 @@
                     android:layout_height="wrap_content"
                     android:inputType="phone"
                     android:textColor="@color/colorTextWhite"
-                    android:textSize="@dimen/user_data_edit_text_size" />
+                    android:textSize="@dimen/user_data_edit_text_size"
+                    android:layout_marginStart="@dimen/edt_margin"
+                    android:layout_marginEnd="@dimen/edt_margin"
+                    />
             </LinearLayout>
         </ScrollView>
 

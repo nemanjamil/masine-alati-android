@@ -6,7 +6,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:background="@color/accent">
 
         <TextView
             android:id="@+id/tv_acc_pass_title"
@@ -74,7 +75,11 @@
             android:layout_below="@id/tv_pass_label"
             android:inputType="textPassword"
             android:textColor="@color/colorTextWhite"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+
+
+            android:layout_marginStart="@dimen/edt_margin"
+            android:layout_marginEnd="@dimen/edt_margin"/>
 
     </RelativeLayout>
 

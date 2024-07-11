@@ -45,4 +45,7 @@
     <!-- Offer indicator -->
     <dimen name="offer_indicator_radius">30dp</dimen>
 
+
+    <dimen name="edt_margin">15sp</dimen>
+
 </resources>

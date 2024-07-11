@@ -6,7 +6,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:background="@color/accent">
 
         <TextView
             android:id="@+id/tv_title"
@@ -45,7 +46,11 @@
             android:layout_below="@id/tv_name_label"
             android:inputType="textPersonName"
             android:textColor="@color/colorTextWhite"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+
+
+            android:layout_marginStart="@dimen/edt_margin"
+            android:layout_marginEnd="@dimen/edt_margin"/>
 
         <TextView
             android:id="@+id/tv_last_name_label"
@@ -69,7 +74,11 @@
             android:layout_below="@id/tv_last_name_label"
             android:inputType="textPersonName"
             android:textColor="@color/colorTextWhite"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+
+
+            android:layout_marginStart="@dimen/edt_margin"
+            android:layout_marginEnd="@dimen/edt_margin"/>
 
     </RelativeLayout>
 </FrameLayout>
